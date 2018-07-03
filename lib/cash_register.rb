@@ -20,7 +20,7 @@ class CashRegister
 
   def apply_discount
     #discount of 20 means 20% off of the total 
-    if @discount >= 0
+    if @discount > 0
       @discounted_amount = @total * self.discount.to_f/100
       new_total = @total -= discounted_amount
       "After the discount, the total comes to $#{new_total.to_i}."
