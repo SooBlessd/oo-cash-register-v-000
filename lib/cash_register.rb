@@ -36,8 +36,6 @@ class CashRegister
   def void_last_transaction
     last_item = @items.pop
     last_item
-   binding.pry
-    
   end
     
   
